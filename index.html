@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>40k flashcards</title>
+  <meta name="description" content="Create flashcards to print off using your battlescribe list.">
+  <meta name="author" content="Mark Hooper">
+
+  <meta property="og:title" content="40k flashcards">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.github.com/markdhooper/40kflashcards">
+  <meta property="og:description" content="Create flashcards to print off using your battlescribe list.">
+  <meta property="og:image" content="image.png">
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+</head>
+
+<body onload="init()">
+  <input id="fileInput" type="file" name="file" />
+  <br>
+  <div id="editor">
+    <div id="battlescribe_list"></div>
+    <div id="selected_datasheets" class="battlescribe">
+      <button id="save_btn" class="hidden save_button">save</button>
+    </div>
+  </div>
+</body>
+</html>
